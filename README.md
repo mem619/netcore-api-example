@@ -3,6 +3,8 @@
 Example Api Rest using Auth Bearer Token, Swagger, Generic Repository, Migrations and Mapper.
 
 ## Get Started
+SDK netcore 2+
+SQL Server (SQL Server high level user for migrations).
 
 Restore packages.
 ```
@@ -17,6 +19,13 @@ Configure String Database Connection appsetting file.
   }
 ````
 
+Run Migration with Package Console in DBContext Project.
+```
+add-migration InitialCreate
+update-database
+
+````
+
 Build Application.
 ```
 dotnet build
@@ -25,6 +34,11 @@ dotnet build
 Run Application and Test.
 ```
 dotnet run --project WB.WAPP.SEG.Api
+````
+
+Run Unit Test.
+```
+dotnet test
 ````
 
 ## How to Engage, Contribute, and Give Feedback
