@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WB.WAPP.SEG.Business\WB.WAPP.Business.csproj" />
+    <ProjectReference Include="..\WB.WAPP.SEG.Model\WB.WAPP.SEG.Model.csproj" />
+    <ProjectReference Include="..\WB.WAPP.SEG.Util\WB.WAPP.SEG.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
